@@ -27,26 +27,7 @@
 ---
 
 ## UI/UX 
-<img src="https://user-images.githubusercontent.com/104635627/224969225-f70673e7-5402-469f-b601-32b44eee75b4.png"  align="left"  alt="bruh" width="270" height="500"> 
-<img src="https://user-images.githubusercontent.com/104635627/224969837-f1c0dc92-7792-44d4-b1e5-f41443dd541b.png"  align="left"  alt="bruh" width="270" height="500">
-<br/>
-<img src="https://user-images.githubusercontent.com/104635627/224971240-d74daab9-ffbd-4f1d-8abf-d6f5d8236881.png"  align="left"  alt="bruh" width="250" height="500">
-
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
+<img src="assets/agrolab_whole.png" alt="AgroLab App Screenshots" width="800" height="600">
 ---
 
 ## Setting Up

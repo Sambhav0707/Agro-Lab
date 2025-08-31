@@ -33,9 +33,9 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
   }
 
   final List<Widget> screens = [
-    Encyclopedia(),
-    HomeScreen(),
-    AppInfoScreen(),
+    const Encyclopedia(),
+    const HomeScreen(),
+    const AppInfoScreen(),
   ];
 
   @override
