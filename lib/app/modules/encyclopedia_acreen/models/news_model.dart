@@ -89,14 +89,15 @@ class NewsResult {
   factory NewsResult.fromJson(Map<String, dynamic> json) {
     return NewsResult(
       id: json['id'] ?? 0,
-      href: json['href'] ?? '',
-      publishedAt: json['published_at'] ?? '',
-      title: json['title'] ?? '',
-      description: json['description'] ?? '',
-      body: json['body'] ?? '',
-      language: json['language'] ?? '',
-      author: json['author'],
-      image: json['image'] ?? '',
+      href: json['href']?.toString() ?? '',
+      publishedAt: json['published_at']?.toString() ?? '',
+      title: json['title']?.toString() ?? '',
+      description: json['description']?.toString() ?? '',
+      body: json['body']?.toString() ?? '',
+      language: json['language']?.toString() ?? '',
+      author: json['author']
+          ?.toString(), // ### CHANGE THIS #### - Convert to string if it's a Map
+      image: json['image']?.toString() ?? '',
       categories: (json['categories'] as List<dynamic>?)
               ?.map((category) => Category.fromJson(category))
               .toList() ??
@@ -141,10 +142,13 @@ class Category {
 
   factory Category.fromJson(Map<String, dynamic> json) {
     return Category(
-      id: json['id'] ?? '',
-      name: json['name'] ?? '',
+      id: json['id']?.toString() ??
+          '', // ### CHANGE THIS #### - Convert to string if it's a Map
+      name: json['name']?.toString() ??
+          '', // ### CHANGE THIS #### - Convert to string if it's a Map
       score: (json['score'] ?? 0.0).toDouble(),
-      taxonomy: json['taxonomy'] ?? '',
+      taxonomy: json['taxonomy']?.toString() ??
+          '', // ### CHANGE THIS #### - Convert to string if it's a Map
       links: json['links'] ?? {},
     );
   }
@@ -184,13 +188,18 @@ class Source {
   factory Source.fromJson(Map<String, dynamic> json) {
     return Source(
       id: json['id'] ?? 0,
-      domain: json['domain'] ?? '',
-      homePageUrl: json['home_page_url'] ?? '',
-      type: json['type'] ?? '',
-      bias: json['bias'] ?? '',
+      domain: json['domain']?.toString() ??
+          '', // ### CHANGE THIS #### - Convert to string if it's a Map
+      homePageUrl: json['home_page_url']?.toString() ??
+          '', // ### CHANGE THIS #### - Convert to string if it's a Map
+      type: json['type']?.toString() ??
+          '', // ### CHANGE THIS #### - Convert to string if it's a Map
+      bias: json['bias']?.toString() ??
+          '', // ### CHANGE THIS #### - Convert to string if it's a Map
       rankings: json['rankings'] ?? {},
       location: json['location'] ?? {},
-      favicon: json['favicon'] ?? '',
+      favicon: json['favicon']?.toString() ??
+          '', // ### CHANGE THIS #### - Convert to string if it's a Map
     );
   }
 
@@ -248,7 +257,8 @@ class SentimentDetail {
   factory SentimentDetail.fromJson(Map<String, dynamic> json) {
     return SentimentDetail(
       score: (json['score'] ?? 0.0).toDouble(),
-      polarity: json['polarity'] ?? '',
+      polarity: json['polarity']?.toString() ??
+          '', // ### CHANGE THIS #### - Convert to string if it's a Map
     );
   }
 

@@ -1,0 +1,2 @@
+E:/Agro-Lab/android/app/.cxx/RelWithDebInfo/3269136i/x86_64/CMakeFiles/edit_cache.dir
+E:/Agro-Lab/android/app/.cxx/RelWithDebInfo/3269136i/x86_64/CMakeFiles/rebuild_cache.dir
